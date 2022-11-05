@@ -88,44 +88,41 @@ body{
   
     border-color: #2ecc71 
   
-  } 
-  
-   
-  
-  .box input[type = "submit"]{ 
-  
-    border:0; 
-  
-    background: none; 
-  
-    display: block; 
-  
-    margin: 20px auto; 
-  
-    text-align: center; 
-  
-    border: 2px solid #2ecc71; 
-  
-    padding: 14px 40px; 
-  
-    outline: none; 
-  
-    color: #2ecc71; 
-  
-    border-radius: 24px; 
-  
-    transition: 0.25s; 
-  
-    cursor: pointer 
-  
-  } 
-  
-   
-  
-  .box input[type = "submit"]:hover{ 
-  
-    background: #2ecc71; 
-  
-    color: white 
-  
-  }
+  }      
+.btn{ 
+
+  border:0; 
+
+  background:black; 
+
+  display: block; 
+
+  margin: 0px auto; 
+
+  text-align: center; 
+
+  border: 3px solid #2ecc71; 
+
+  padding: 6px 40px; 
+
+  outline: none; 
+
+  color: #2ecc71; 
+
+  border-radius: 24px; 
+
+  transition: 0.25s; 
+
+  cursor: pointer 
+
+} 
+
+ 
+
+.btn:hover{ 
+
+  background: #2ecc71; 
+
+  color: rgb(142, 136, 136) 
+
+}

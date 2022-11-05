@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Login from './components/login/Login'
 import Homepage from './components/pages/Homepage'
@@ -7,9 +6,10 @@ import {Routes,Route} from 'react-router-dom';
 function App() {
   return (
     <div>
-    <Login/>
     <Routes>
-      <Route  path="/" element={Homepage} />
+      <Route  path="/" exact element={<Login/>} />
+      <Route  path="/home" exact element={<Homepage/>} />
+      <Route  path="/login" exact element={<Login/>} />
     </Routes>
     </div>
   );

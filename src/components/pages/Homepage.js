@@ -3,12 +3,12 @@ import axios from "axios";
 
 import CryptoList from "../CryptoList/CryptoList";
 import Loader from "../Loader/Loader";
+import './Homepage.css'
+import { Link } from "react-router-dom";
 
 const PAGE_NUMBER = 1;
 
-
 const Homepage = () => {
-
     const [coinsData, setCoinsData] = useState([]);
     const [page, setPage] = useState(PAGE_NUMBER);
     const [loading, setLoading] = useState(false);
@@ -42,15 +42,16 @@ const Homepage = () => {
         }
     };
 
+    return (
+        <div className="app">
+            <div className="navbar">
+                <h1>Crypto Gallery</h1>
+                <div ><Link to ="/login" className="logout-btn">Logout</Link></div>
+            </div>
+            <CryptoList coinsData={coinsData} />
+            {loading && <Loader />}
+        </div>
+    );
+};
 
-
-  return (
-    <div className='app'>
-    <h1>Crypto Gallery</h1>
-    <CryptoList coinsData={coinsData} />
-    {loading && <Loader />}
-    </div>
-  )
-}
-
-export default Homepage
+export default Homepage;
